@@ -64,12 +64,10 @@ let contiene = (str) => {
 console.log(contiene('VIAGRA'));
 
 //3. 
-let verificarLongitud = (str, maxLength) => {
-    let largo = str.length;
-    if(maxLength>largo){
-        str.at(-1) = '...'
-        return str
-    }
-}
+let verificarLongitud = (str, maxlength) => {
+    return (str.length > maxlength) ? 
+      str.slice(0, maxlength - 1) + '…' : str;
+  }
 
-console.log(verificarLongitud('hola',5))
+
+console.log(verificarLongitud('hodddda',5))
