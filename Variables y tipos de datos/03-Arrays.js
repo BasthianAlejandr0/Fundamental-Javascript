@@ -26,9 +26,10 @@ autos.push("Renault");
 console.log(`El nuevo elemento es: ${autos.at(-1)}`);
 
 console.log(autos.shift());
-console.log(`Ahora el primer elemento es: ${autos[0]}`);
 
+console.log(`Ahora el primer elemento es: ${autos[0]}`);
 autos.unshift("Mazda");
+
 console.log(`Se agrego ${autos[0]} al inicio: ${autos}`);
 
 //6. Manipulacion de una PILA
