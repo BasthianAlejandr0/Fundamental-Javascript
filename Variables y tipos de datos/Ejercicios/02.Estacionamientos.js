@@ -62,10 +62,11 @@ let verificarEstacionamientoOcupado = (estacionamiento) => {
   if (estacionamiento.ocupado === false) {
     return "Esta libre";
   } else {
-    return estacionamiento.ocupado;
+    let Verificar = `${estacionamiento.nombre}: OCUPADO por ${estacionamiento.ocupado} con el auto ${estacionamiento.autorizados[estacionamiento.ocupado]}`
+    return Verificar;
   }
 };
 
 for (let estacionamientoIterador of estacionamientos) {
-  console.log(estacionamientoIterador);
+  console.log(verificarEstacionamientoOcupado(estacionamientoIterador));
 }

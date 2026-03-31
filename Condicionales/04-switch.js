@@ -13,3 +13,12 @@ switch (a) {
   default:
     console.log("Desconozco estos valores");
 }
+
+let dia = "Jueves"
+
+switch (dia){
+  case "Lunes":
+    console.log("Es Lunes")
+    break;
+  
+}

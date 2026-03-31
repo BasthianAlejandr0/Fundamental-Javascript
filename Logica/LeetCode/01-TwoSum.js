@@ -22,13 +22,19 @@
  */
 
 //Explicacion simple: buscar la suma de 2 indices que den 9
-// paso 1: el primer recorrido sumarlo con el siguiente
 let twoSum = function (nums, target) {
-  for (let i = 0; i < nums.length; i++) {
-    let match = nums[i] + nums[i + 1];
-    if (match === target) {
+  for(let i = 0; i< nums.length; i++) {
+    //let suma = nums[i]
+    for(let j=i+1; j< nums.length; j++){
+      let suma =  nums[j] + nums[i]
+      if(suma === target){
+        return [i,j]
+      }
     }
   }
 };
 
-console.log(twoSum([2, 7, 11, 15], 9));
+twoSum([2, 7, 11, 15], 9);
+
+//1. Recorro el arreglo 
+//2. Obtengo el valor del primero y lo sumo con el siguiente

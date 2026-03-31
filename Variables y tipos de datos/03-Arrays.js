@@ -8,6 +8,7 @@ console.log({ autos });
 //2. Obtener el largo del arreglo
 console.log(`El largo de arreglo es: ${autos.length}`);
 
+
 //3. ¿Que puede almacenar un array?
 autos = [
   "Kia",
@@ -17,9 +18,11 @@ autos = [
 ];
 console.log(`Acceder a la clase: ${autos[2].marca}`);
 
+
 //4. Obtener el ultimo elemento
 let obtenerUltimoElemento = autos.at(-1);
 console.log(`El ultimo elemento del arreglo es: ${obtenerUltimoElemento}`);
+
 
 //5. Manipulacion de una COLA
 autos.push("Renault");
@@ -31,6 +34,7 @@ console.log(`Ahora el primer elemento es: ${autos[0]}`);
 autos.unshift("Mazda");
 
 console.log(`Se agrego ${autos[0]} al inicio: ${autos}`);
+
 
 //6. Manipulacion de una PILA
 let frutas = ["Manzana", "Pera", "Sandia", "Platano"];
