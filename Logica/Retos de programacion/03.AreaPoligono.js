@@ -7,16 +7,3 @@
  */
 
 //Paso 1: Crear una funcion que solo pueda recibir un poligono a la vez
-//   Paso 1.1: Verificar el parametro que se esta entregando en base a las caracteristicas de un poligono
-
-function isTriangulo(poligono) {}
-function isCuadrado() {}
-function isRectangulo() {}
-let areaToPoligono = (poligono) => {
-  //Verificacion del poligono
-  isCuadrado(poligono);
-  isRectangulo(poligono);
-  isTriangulo(poligono);
-  if (poligono === "triangulo") {
-  }
-};
