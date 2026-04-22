@@ -5,30 +5,33 @@
  */
 
 
-// //Map
-// let arreglo = [1,2,3,4,5];
+//Map
+let arreglo = [1,2,3,4,5];
+let numeros = [1,2,3,4,5,6,7,8,9];
 
-// let arregloMap = arreglo.map(
-//     (item) => {
-//         return item * 2
-//     } 
-// )
-// console.log(`Con map recorremos cada numero de la lista y lo multiplicamos por 2: ${arregloMap}`)
+let arregloMap = arreglo.map(
+    (item) => {
+        return item * 2
+    } 
+)
+console.log(`Con map recorremos cada numero de la lista y lo multiplicamos por 2: ${arregloMap}`)
 
-// //Filter
-// let arregloFilter = arreglo.filter((item) => item%2===0)
-// console.log(`El arreglo filtrado por multiplos de 2 es: [${arregloFilter}]`)
-
-
-// //Reduce
-// const valorInicial = 0;
-// const sumaConInicial = arreglo.reduce(
-//     (acomulador, valorActual) => acomulador + valorActual,
-//     valorInicial
-// )
+//Filter
+let arregloFilter = arreglo.filter((item) => item%2===0)
+console.log(`El arreglo filtrado por multiplos de 2 es: [${arregloFilter}]`)
 
 
-// console.log(sumaConInicial);
+//Reduce
+const valorInicial = 0;
+const sumaConInicial = arreglo.reduce(
+    (acomulador, valorActual) => acomulador + valorActual,
+    valorInicial
+)
+
+const suma = numeros.reduce((a,b) => a+b)
+console.log(suma)
+
+console.log(sumaConInicial);
 
 
 //Funcion como argumento
@@ -41,7 +44,6 @@
 /*
  *1. Map: Recorre el arreglo y accede a cada elemento 
 */
-let numeros = [1,2,3,4,5,6,7,8,9];
 
 function miMap(array, fn){
     //Para map esta funcion siempre tiene que recorrer el arreglo array
@@ -58,6 +60,6 @@ function miMap(array, fn){
 }
 
 
-console.log(miMap(numeros, (fn) => (fn/2).toFixed(3)));
+console.log(miMap(numeros, (fn) => fn * 2));
 
 

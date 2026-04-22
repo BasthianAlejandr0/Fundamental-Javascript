@@ -9,6 +9,8 @@ palabra = `Soy un string ${saludo}`
 let largo = palabra.length;
 console.log(largo);
 
+
+
 //2. Acceso a caracteres
 let primeraLetra = palabra[0]; // Accede a la primera letra
 let primeraLetraConAt = palabra.at(0)
@@ -18,23 +20,33 @@ let ultimaLetra = palabra[palabra.length - 1] // Accede a la ultima letra
 let ultimaLetraConAt = palabra.at(-1)
 console.log(ultimaLetra, ultimaLetraConAt)
 
+
+
 //3. Capitalización 
 let palabraEnMinuscula = palabra.toLowerCase();
 console.log(palabraEnMinuscula);
 let palabraEnMayuscula = palabra.toUpperCase();
 console.log(palabraEnMayuscula);
 
+
+
 //4. Subcadena de caracteres
 let subcadena = palabra.indexOf('yu');//1,2
 console.log(subcadena);
+
+
 
 //5. Verificacion de caracteres
 let existe = palabra.includes('hola');//false
 console.log(existe);
 
+
+
 let comienzaCon = palabra.startsWith('Soy'); //True
 console.log(comienzaCon);
 let terminaCon = palabra.endsWith('Hola');//true
+
+
 
 //6. Obteniendo un substring
 let substring = palabra.slice(0,5);
