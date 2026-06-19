@@ -32,3 +32,16 @@ function crearArray(...rest) {
 }
 
 crearArray(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+// Spread — expandir
+const arr1 = [1, 2, 3];
+const arr2 = [...arr1, 4, 5];          // [1, 2, 3, 4, 5]
+const copia = { ...obj, nuevo: true }; // shallow copy + nueva prop
+
+// Rest — agrupar en función
+const sumar = (...nums) => nums.reduce((a, b) => a + b);
+sumar(1, 2, 3, 4); // 10
+
+// Rest en desestructuración
+const { nombre, ...resto } = usuario;  // resto tiene todo menos nombre
+const [primero, ...cola] = [1, 2, 3];  // cola = [2, 3]

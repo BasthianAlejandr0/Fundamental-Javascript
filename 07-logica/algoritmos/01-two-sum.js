@@ -33,7 +33,22 @@ let twoSum = function (nums, target) {
   }
 };
 
-twoSum([2, 7, 11, 15], 9);
+// twoSum([2, 7, 11, 15], 9);
 
-// 1. Recorro el arreglo
-// 2. Obtengo el valor del primero y lo sumo con el siguiente
+
+let twoSumOn = function(nums, target){
+  let newMap = new Map()
+  for(let i = 0; i< nums.length; i++){
+    let num = nums[i]
+    let complemento = target - num
+    if(newMap.has(complemento)){
+      return [newMap.get(complemento), i];
+    } else {
+      newMap.set(num, i)
+    }
+  }
+}
+twoSumOn([2, 7, 11, 15], 9)
+
+
+
